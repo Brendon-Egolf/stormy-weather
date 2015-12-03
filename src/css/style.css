@@ -15,9 +15,9 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  margin: 0 auto;
   padding-left: 1.5rem;
   display: flex;
-  height: 96px;
   background: rgba(0, 0, 0, 0.5); }
   header h1 {
     margin-top: 17px;
@@ -30,5 +30,41 @@ header {
   background: rgba(0, 0, 0, 0.5);
   border: double white 4px;
   padding: 1rem 2rem 1rem 2rem; }
+
+#screen-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+  #screen-type i {
+    margin: 30px 5px 30px 5px; }
+
+@media screen and (min-width: 500px) {
+  #phone {
+    opacity: .5; }
+
+  #tablet {
+    opacity: .5; }
+
+  #desktop {
+    opacity: 1; } }
+@media screen and (max-width: 600px) {
+  #phone {
+    opacity: .5; }
+
+  #tablet {
+    opacity: 1; }
+
+  #desktop {
+    opacity: .5; } }
+@media screen and (max-width: 320px) {
+  #phone {
+    opacity: 1; }
+
+  #tablet {
+    opacity: .5; }
+
+  #desktop {
+    opacity: .5; } }
 
 /*# sourceMappingURL=style.css.map */
