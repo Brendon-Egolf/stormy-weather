@@ -8,23 +8,22 @@ html {
 
 body {
   color: white;
-  font-family: Oxygen, Arial, sans-serif; }
+  font-family: Oxygen, Arial, sans-serif;
+  margin: 0; }
 
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  padding-left: 1.5rem;
+  /*    position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;*/
   display: flex;
+  justify-content: space-between;
   background: rgba(0, 0, 0, 0.5); }
   header h1 {
-    margin-top: 17px;
     font-size: 3rem; }
 
 #caption {
-  margin-top: 168px;
+  margin-top: 84px;
   margin-left: 72px;
   width: 20%;
   background: rgba(0, 0, 0, 0.5);
@@ -32,10 +31,7 @@ header {
   padding: 1rem 2rem 1rem 2rem; }
 
 #screen-type {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0; }
+  margin-right: 25px; }
   #screen-type i {
     margin: 30px 5px 30px 5px; }
 
@@ -56,8 +52,20 @@ header {
     opacity: 1; }
 
   #desktop {
-    opacity: .5; } }
-@media screen and (max-width: 320px) {
+    opacity: .5; }
+
+  #caption {
+    width: 50%; }
+
+  header {
+    height: 144px; }
+
+  #screen-type {
+    position: absolute;
+    top: 64px;
+    left: 1.5rem;
+    bottom: 0; } }
+@media screen and (max-width: 450px) {
   #phone {
     opacity: 1; }
 
@@ -65,6 +73,9 @@ header {
     opacity: .5; }
 
   #desktop {
-    opacity: .5; } }
+    opacity: .5; }
+
+  #caption {
+    margin-left: 2.5rem; } }
 
 /*# sourceMappingURL=style.css.map */

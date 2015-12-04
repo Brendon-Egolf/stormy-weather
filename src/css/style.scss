@@ -12,16 +12,18 @@ html {
 body {
     color: white;
     font-family: Oxygen, Arial, sans-serif;
+    margin: 0;
 }
 
 header {
-    position: absolute;
+/*    position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding-left: 1.5rem;
+    right: 0;*/
+
+
     display: flex;
+    justify-content: space-between;
     //height: 96px;
 
 
@@ -29,14 +31,13 @@ header {
     background: rgba(0, 0, 0, .5);
 
     h1 {
-        margin-top: 17px;
         font-size: 3rem;
     }
 
 }
 
 #caption {
-    margin-top: 168px;
+    margin-top: 84px;
     margin-left: 72px;
     width: 20%;
 
@@ -48,18 +49,11 @@ header {
 }
 
 #screen-type {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-
+    margin-right: 25px;
     i {
-
         margin: 30px 5px 30px 5px;
 
     }
-
-
 
 }
 
@@ -89,9 +83,24 @@ header {
     #desktop {
         opacity: .5;
     }
+
+    #caption {
+        width: 50%;
+    }
+
+    header {
+        height: 144px;
+    }
+
+    #screen-type {
+        position: absolute;
+        top: 64px;
+        left: 1.5rem;
+        bottom: 0;
+    }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
     #phone {
         opacity: 1;
     }
@@ -103,6 +112,14 @@ header {
     #desktop {
         opacity: .5;
     }
+
+
+
+    #caption {
+        margin-left: 2.5rem;
+    }
+
+
 }
 
 
